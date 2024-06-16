@@ -1,90 +1,124 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-
+        <meta charset="utf-8">
+        <title>TK Photography</title>
+        <!--[if lt IE9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![end if]-->
+        <meta name="author" content="Zachary Fraedrich">
+        <meta name="description" content="Photogallery for photographer TK">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
 <!-- HEADER  -->        
-        <header>
+        <header id="top">
             <h1>TK Photography</h1>
             <nav>
                 <h2>Main Navigation</h2>
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">top</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#top">top</a></li>
                 </ul>
             </nav>
         </header>
         <main>
  <!-- ABOUT SECTION -->
-            <section>
+            <section id="about">
                 <h2>About</h2>
             
-                Hello! 
-                I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world. 
+                <p>Hello!</p> 
+                <p>I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world.</p> 
             </section>
             
  <!-- GALLERY SECTION -->
-            <section>
+            <section id="gallery">
                 <h2>Gallery</h2>
-                Here are some highlights of my work. The locations and year are in the caption. 
+                <p>Here are some highlights of my work. The locations and year are in the caption.</p> 
 
-                Chile.png
-                Chile, 2001
+                <figure>
+                    <img src="images/Chile.png" alt="Beach view, sunny but with a few clouds, tide moving around a cliff.">
+                    <figcaption>Chile, 2001</figcaption>
+                </figure>
 
-                Guatemala.png
-                Guatemala, 1997
+                <figure>
+                    <img src="images/Guatemala.png" alt="Beautiful lake view of sunset reflection, with purple flowers.">
+                    <figcaption>Guatemala, 1997</figcaption>
+                </figure>
+                                
+                <figure>
+                    <img src="images/Hawaii.png" alt="Aerial view of the green densely covered mountains of the island.">
+                    <figcaption>Hawaii, 2010</figcaption>
+                </figure>
+                                
+                <figure>
+                    <img src="images/Iran.png" alt="Desert landscape with clear skies and vibrant red bushes.">
+                    <figcaption>Iran, 1999</figcaption>
+                </figure>
 
-                Hawaii.png
-                Hawaii, 2010
+                <figure>
+                    <img src="images/Ireland.png" alt="Vibrant rolling green hills.">
+                    <figcaption>Ireland, 2012</figcaption>
+                </figure>
 
-                Iran.png
-                Iran, 1999
+                <figure>
+                    <img src="images/Italy.png" alt="View of canoers on clear waters with large mountain in the background.">
+                    <figcaption>Italy, 2015</figcaption>
+                </figure>
 
-                Ireland.png
-                Ireland, 2012
+                <figure>
+                    <img src="images/Moab-Desert.png" alt="Peaking through a natural rock arch. Overview of red rock desert at sunrise.">
+                    <figcaption>Moab Desert, 2020</figcaption>
+                </figure>
 
-                Italy.png
-                Italy, 2015
+                <figure>
+                    <img src="images/Rocky-Mountains.png" alt="Beautiful rocky pillars contrasting against a grey and clouded sky.">
+                    <figcaption>Rocky Mountains, 2009</figcaption>
+                </figure>                
 
-                Moab-Desert.png
-                Moab Desert, 2020
+                <figure>
+                    <img src="images/Switzerland.png" alt="Snowy overview. Mountains in the distance with fog showing through the trees."> 
+                    <figcaption>Switzerland, 2014</figcaption>
+                </figure>
+                               
+                <figure>
+                    <img src="images/UK.png" alt="Landscape photo. Rolling hills and soft lit sky.">
+                    <figcaption>UK, 2005</figcaption>
+                </figure>
 
-                Rocky-Mountains.png
-                Rocky Mountains, 2009
-
-                Switzerland.png
-                Switzerland, 2014
-
-                UK.png
-                UK, 2005
-
-                USA.png
-                USA, 2021
-
-                Wyoming.png
-                Wyoming, 2021
+                <figure>
+                    <img src="images/USA.png" alt="Cloudy sunset over a large green field of flowers.">
+                    <figcaption>USA, 2021</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="images/Wyoming.png" alt="View of mountains reflecting in a river.">
+                    <figcaption>Wyoming, 2021</figcaption>
+                </figure>
+                
             </section>
-            
+        </main>    
 <!--  CONTACT SECTION  -->
-            <section>
+        <aside>
+            <section id="contact">
                 <h2>Contact</h2>
+                <p>Please fill out this form and I’ll connect with you soon.</p>
 
-                Please fill out this form and I’ll connect with you soon.
+                <form>
+                    <label for="userName">Name</label>
+                    <input type="text" id="userName" name="userName" placeholder="Your full name"><br>
+                    <label for="userEmail">Email</label>
+                    <input type="email" id="userEmail" name="userEmail" placeholder="Enter your email address"><br>
+                    <label for="userMessage">Message</label>
+                    <input type="text" id="userMessage" name="userMessage" placeholder="What can I help you with?"><br>
+                    <input type="submit" value="Submit">
+                </form>
 
-                Your contact information
-                Name (Your full name)
-                Email (Enter your email address)
-                Message (What can I help you with?)
-                Submit
             </section>    
-        </main>
+        </aside>
 <!--  FOOTER  -->
         <footer>
-            <p>
                 <small>Copyright 2021 TK Photography</small>
-            </p>
         </footer>
     </body>
 </html>
