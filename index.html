@@ -5,6 +5,7 @@
         <title>TK Photography</title>
         <!--[if lt IE9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![end if]-->
         <meta name="author" content="Zachary Fraedrich">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Photogallery for photographer TK">
         <link rel="stylesheet" href="styles.css">
     </head>
@@ -38,7 +39,7 @@
 
                 <figure>
                     <img src="images/Chile.png" alt="Beach view, sunny but with a few clouds, tide moving around a cliff.">
-                    <figcaption>Chile, 2001</figcaption>
+                    <figcaption class="whiteBottomText">Chile, 2001</figcaption>
                 </figure>
 
                 <figure>
@@ -107,10 +108,13 @@
                 <form>
                     <label for="userName">Name</label>
                     <input type="text" id="userName" name="userName" placeholder="Your full name"><br>
+
                     <label for="userEmail">Email</label>
                     <input type="email" id="userEmail" name="userEmail" placeholder="Enter your email address"><br>
+
                     <label for="userMessage">Message</label>
-                    <input type="text" id="userMessage" name="userMessage" placeholder="What can I help you with?"><br>
+                    <textarea id="userMessage" name="userMessage" placeholder="What can I help you with?"><br>
+                    
                     <input type="submit" value="Submit">
                 </form>
 
