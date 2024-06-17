@@ -75,14 +75,13 @@ body {
     background-color: var(--blk);
     font-family: var(--font);
     color: var(--blk);
-
 }
 
 /* FONT SIZES */
 
 p{
     font-size: 1.25em;
-    padding-top: 20px;
+    padding: 20px 0;
 }
 nav a {
     font-size: 1.5em;
@@ -109,31 +108,36 @@ h1 {
     font-size: 3em;
     padding-left: 10px;
     margin: 0;
-    
 }
 
 /*      NAV STUFF    */
 nav {
     background-color: var(--blk);
-    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
 nav h2{
     visibility: hidden;
     height: 1px;
 }
-nav li {
-    display: inline-flex;
-    margin: 0 auto;
-    padding: 0 15px;
+nav ul{
+    display: flex;
 }
-
+nav ul li{
+    padding: 0 10px;
+}
+nav ul li a{
+    display: block;
+}
 nav li, nav li a{
     list-style: none;
     text-decoration: none;
     color: var(--wht);
-    text-transform: uppercase;
-    
+    text-transform: uppercase;    
 }
+
 nav li a:hover{
     color: var(--aqua);
 }
@@ -157,19 +161,36 @@ main{
 figure img{
     width:95%;
     margin: 0 auto;
-    padding:  5px 10px;
+    padding:  1px 10px;
 }
 figcaption{
     text-align: center;
     font-weight: bold;
 }
 
-
+.blkBottomText{
+    position: relative;
+    bottom: 2rem;
+}
 .whiteBottomText{
     position: relative;
-    bottom: 3rem;
+    bottom: 2rem;
     color: var(--wht);
 }
+.blkTopText{
+    position: relative;
+    bottom: 18rem;
+}
+.whiteTopText{
+    position: relative;
+    bottom: 18rem;
+    color: var(--wht);    
+}
+.tallTopText{
+    position: relative;
+    bottom: 41rem;    
+}
+
 
 /* CONTACT */
 #contact, footer {
@@ -191,11 +212,13 @@ figcaption, label, input, small {
 form{
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    padding: 20px;
+    gap: 2px;
+    padding: 35px;
 }
 label{
     font-weight: bold;
+    padding: 0 10px;
+    text-transform: uppercase;
 }
 input[type="submit"]{
     margin: 0 auto;
@@ -207,7 +230,11 @@ input[type="submit"]{
     border-radius: 8px;
     padding: 5px;
 }
-
+::placeholder{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--aqua);
+}
 
 /* FOOTER */
 
@@ -215,4 +242,5 @@ footer{
     text-align: center;
     border-top: var(--blk) 3rem solid;
     border-bottom: var(--blk) 1rem solid;
+    text-transform: uppercase;
 }
